@@ -1,0 +1,434 @@
+@font-face {
+    font-family: font1_0;
+    src: url(fonts/font1_2/Quicksand_Bold.otf);
+}
+
+@font-face {
+    font-family: font1_1;
+    src: url(fonts/font1_2/Quicksand_Book.otf);
+}
+
+
+@font-face {
+    font-family: font2;
+    src: url(fonts/font2/cCaesarSalad.ttf);
+}
+
+* {
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+header {
+    left: 0em;
+    width: 100vw;
+    position: fixed;
+    height: 5em;
+    justify-content: right;
+    align-items: center;
+    display: flex;
+    top: 0em;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.9)
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 5em;
+}
+
+nav ul li a {
+    font-family: font2;
+    font-size: 1.6em;
+    color: rgb(108, 179, 254);
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+    transition: 0.1s;
+}
+
+h1,
+h2 {
+    font-family: font2;
+}
+
+p {
+    font-family: font1_1;
+}
+
+/*End of header and beginning intro*/
+.intro {
+    background-image: url(illustrations/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    align-content: center;
+    justify-items: center;
+    padding: 1em;
+}
+
+.intro img {
+    width: 22.5em;
+    height: 26em;
+    position: absolute;
+    top: 18em;
+    left: 6em;
+}
+
+h1 {
+    letter-spacing: .1em;
+    font-size: 6em;
+    text-align: center;
+    transform: translateY(3.3em);
+}
+
+.box {
+    font-size: 2.4em;
+    transform: translateY(13em);
+    width: fit-content;
+    position: absolute;
+    left: 18em;
+}
+
+.intro::before {
+    animation: bounce 1.5s ease-out infinite;
+    bottom: -.4em;
+    font-family: fantasy;
+    font-weight: bold;
+    font-size: 4em;
+    content: 'v';
+    left: 10.7em;
+    position: absolute;
+    text-align: center;
+}
+
+@keyframes bounce {
+    50% {
+        transform: translateY(-.4em);
+    }
+}
+
+/*End of intro and beginning about me*/
+
+body {
+    background-color: #edecec;
+    height: 100vh;
+}
+
+.aboutMe {
+    align-items: center;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+}
+
+.left {
+    width: 50vw;
+    padding: 1em;
+}
+
+.right {
+    width: 50vw;
+    height: 80vh;
+    font-size: 1.2em;
+    background-image: url(illustrations/bg.png);
+    background-size: cover;
+    justify-content: center;
+    background-repeat: no-repeat;
+    padding-right: 4em;
+}
+
+.right p {
+    position: absolute;
+    transform: translateY(10em);
+    font-weight: bold;
+    line-height: 2em;
+    padding: 1em;
+    text-align: left;
+}
+
+.right p:nth-child(2) {
+    transform: translateY(11.5em);
+}
+
+.right p:nth-child(3) {
+    transform: translateY(13em);
+}
+
+.right p:nth-child(4) {
+    transform: translateY(14.5em);
+}
+
+.right p:nth-child(5) {
+    transform: translateY(16em);
+}
+
+.right p:nth-child(6) {
+    transform: translateY(22em);
+}
+
+
+
+.left h2 {
+    position: absolute;
+    transform: translateY(3em);
+    left: 14.2em;
+    font-size: 2.7em;
+}
+
+.aboutMe img:nth-child(2) {
+    width: 14em;
+    height: 14em;
+    position: relative;
+    top: 24em;
+    left: 30em;
+    z-index: 1;
+    transform: rotate(3deg);
+}
+
+.aboutMe img:nth-child(3) {
+    width: 33em;
+    height: 37em;
+    position: relative;
+    top: -7em;
+    left: 1.2em;
+}
+
+/*End of about me and beginning of skils */
+
+.skill {
+    width: 100vw;
+    height: 25em;
+    padding: 1em 1em;
+    background-color: rgba(0, 0, 0, 0.922);
+    color: #ffffff;
+    font-size: 1.2em;
+    padding-left: 1em;
+}
+
+.headerSkill {
+    width: 100vw;
+    margin-bottom: 2.5em;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.headerSkill h2 span {
+    color: rgb(108, 179, 254);
+    font-size: 1.2em;
+}
+
+.skillMain {
+    width: 100vw;
+
+}
+
+.skillMain p {
+    transform: translateY(1em);
+}
+
+.skillMain .skillBar .infoSkill {
+    display: flex;
+    justify-content: space-between;
+    padding: .6em 1.5em;
+    width: 50vw;
+}
+
+.skillBar .bar {
+    width: 50vw;
+    height: .6em;
+    position: relative;
+    border-radius: 1em;
+    margin-top: .2em;
+    background-color: rgb(255, 255, 255);
+}
+
+.skillBar .bar span {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    border-radius: 1em;
+
+    background-color: rgb(108, 179, 254);
+}
+
+.skillBar .bar .html {
+    width: 95%;
+    animation: html 3s;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 95%;
+    }
+}
+
+.skillBar .bar .css {
+    width: 87%;
+    animation: css 3s;
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 87%;
+    }
+}
+
+.skillBar .bar .js {
+    width: 60%;
+    animation: js 3s;
+}
+
+@keyframes js {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+.skillBar .bar .ill {
+    width: 80%;
+    animation: ill 3s;
+}
+
+@keyframes ill {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+/*projects start here*/
+.boxProj1 {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    padding-top: 8em;
+    text-align: center;
+
+}
+
+.boxProj1 h2 {
+    position: absolute;
+    left: 27em;
+}
+
+
+.one {
+    padding: .1em;
+    width: 1.3em;
+    height: 1.2em;
+    border: 0.02em solid rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.784);
+    font-size: 6em;
+    position: absolute;
+    left: .6em;
+    z-index: 1;
+    top: 2em;
+    color: rgb(255, 255, 255);
+}
+
+.one p {
+    font-family: font2;
+}
+
+.boxProj1 video {
+    width: 30em;
+    height: 27em;
+    position: absolute;
+    top: -4em;
+    left: 1.4em;
+}
+
+.bgVideo {
+    background-color: #ffffff;
+    width: 33em;
+    height: 19em;
+    position: absolute;
+    top: 14em;
+    left: 2em;
+}
+
+.proj1Txt {
+    width: 24em;
+    text-align: left;
+    font-size: 1.4em;
+    position: absolute;
+    left: 1.4em;
+    top: 25em;
+    
+}
+
+/*proj2*/
+.boxProj2 {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    padding-top: 8em;
+    text-align: center;
+
+}
+
+.two {
+    padding: .1em;
+    width: 1.5em;
+    height: 1.3em;
+    border: 0.02em solid rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.784);
+    font-size: 5em;
+    position: absolute;
+    left: 8em;
+    z-index: 1;
+    top: 4em;
+    color: rgb(255, 255, 255);
+}
+
+.two p {
+    font-family: font2;
+}
+
+
+.imgProj1 img {
+
+    width: 16em;
+    height: 26em;
+    position: absolute;
+    top: 9em;
+    left: 44em;
+
+}
+
+.proj2Txt {
+    width: 20em;
+    text-align: left;
+    font-size: 1.4em;
+    position: absolute;
+    left: 43.6em;
+    top: 10em;
+}
