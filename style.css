@@ -89,14 +89,7 @@ h1 {
     text-align: center;
 }
 
-.box {
-    font-size: 2.4em;
-    transform: translateY(2em);
 
-    width: fit-content;
-    position: absolute;
-    left: 18em;
-}
 
 .intro::before {
     animation: bounce 1.5s ease-out infinite;
@@ -205,131 +198,16 @@ body {
     left: 1.2em;
 }
 
-/* End of about me and beginning of skils
-
-.skill {
-    width: 100vw;
-    height: 25em;
-    padding: 1em 1em;
-    background-color: rgba(0, 0, 0, 0.922);
-    color: #ffffff;
-    font-size: 1.2em;
-    padding-left: 1em;
-}
-
-.headerSkill {
-    width: 100vw;
-    margin-bottom: 2.5em;
-    display: grid;
-    place-items: center;
-    text-align: center;
-}
-
-.headerSkill h2 span {
-    color: rgb(108, 179, 254);
-    font-size: 1.2em;
-}
-
-.skillMain {
-    width: 100vw;
-
-}
-
-.skillMain p {
-    transform: translateY(1em);
-}
-
-.skillMain .skillBar .infoSkill {
-    display: flex;
-    justify-content: space-between;
-    padding: .6em 1.5em;
-    width: 50vw;
-}
-
-.skillBar .bar {
-    width: 50vw;
-    height: .6em;
-    position: relative;
-    border-radius: 1em;
-    margin-top: .2em;
-    background-color: rgb(255, 255, 255);
-}
-
-.skillBar .bar span {
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    border-radius: 1em;
-
-    background-color: rgb(108, 179, 254);
-}
-
-.skillBar .bar .html {
-    width: 95%;
-    animation: html 3s;
-}
-
-@keyframes html {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 95%;
-    }
-}
-
-.skillBar .bar .css {
-    width: 87%;
-    animation: css 3s;
-}
-
-@keyframes css {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 87%;
-    }
-}
-
-.skillBar .bar .js {
-    width: 60%;
-    animation: js 3s;
-}
-
-@keyframes js {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 60%;
-    }
-}
-
-.skillBar .bar .ill {
-    width: 80%;
-    animation: ill 3s;
-}
-
-@keyframes ill {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 80%;
-    }
-} */
-/* Stijlen voor de slider en navigatie */
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+}
+.myProjects{
+        overflow: hidden;
+
+
 }
 
 .container {
@@ -367,7 +245,7 @@ html, body {
 .slider img {
     max-width: 90em;
     max-height: 85em;
-    object-fit: contain; /* Zorgt ervoor dat de afbeelding binnen de container past zonder vervorming */
+    object-fit:contain; /* Zorgt ervoor dat de afbeelding binnen de container past zonder vervorming */
 }
 
 .slider-nav {
